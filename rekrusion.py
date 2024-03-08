@@ -1,7 +1,7 @@
 def fakultet(n):
     if n == 0:
         return 1 
-    return n * fakultet(n-1)
+    return n * fakultet(n-1)    
 
 """result = fakultet(4)"""
 """4*3*2*1 = 24"""
