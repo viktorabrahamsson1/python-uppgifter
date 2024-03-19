@@ -37,36 +37,29 @@ class Car:
         print(f"Current position: ({self.x}, {self.y})")
 
 
-# Testprogram
 def main():
-    # Skapa några bilar
     car1 = Car("Red", "Sedan", 200)
     car2 = Car("Blue", "Pickup", 150)
     car3 = Car("Green", "Van", 180)
 
-    # Visa startposition för bilarna
     print("Initial positions:")
     car1.read_position()
     car2.read_position()
     car3.read_position()
 
-    # Starta några bilar
     car1.start()
     car2.start()
     car3.start()
 
-    # Kör bilarna till olika positioner
     car1.drive_to(5, 3)
     car2.drive_to(-2, 7)
     car3.drive_to(10, -5)
 
-    # Avläs bilarnas positioner
     print("\nFinal positions after driving:")
     car1.read_position()
     car2.read_position()
     car3.read_position()
 
-    # Stanna bilarna
     car1.stop()
     car2.stop()
     car3.stop()
